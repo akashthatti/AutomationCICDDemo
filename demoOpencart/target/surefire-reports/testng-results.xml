@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-25T13:48:10 IST" name="Surefire suite" finished-at="2024-05-25T13:51:36 IST" duration-ms="206112">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestNGRunner.TestngRunner@6dbb137d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-05-25T13:48:10 IST" name="Surefire test" finished-at="2024-05-25T13:51:36 IST" duration-ms="206112">
+      <class name="TestNGRunner.TestngRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestNGRunner.TestngRunner@6dbb137d]" started-at="2024-05-25T13:48:10 IST" name="setUpClass" finished-at="2024-05-25T13:48:11 IST" duration-ms="1148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@571a01f9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestNGRunner.TestngRunner@6dbb137d]" started-at="2024-05-25T13:48:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-25T13:49:29 IST" duration-ms="77830" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate registering into the account by providing only mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Registering into the application]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.testContextSetup.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.testContextSetup.driver" is null
+at stepdefinitions.RegisterStepdefinitions.account_success_message_should_be_displayed(RegisterStepdefinitions.java:63)
+at ✽.Account success message should be displayed(file:///C:/Users/admin/eclipse-workspace/demoOpencart/src/test/java/features/Register.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestNGRunner.TestngRunner@6dbb137d]" started-at="2024-05-25T13:49:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-25T13:50:08 IST" duration-ms="39176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate error messages displayed when user clicks on continue bt without providing any details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Registering into the application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestNGRunner.TestngRunner@6dbb137d]" started-at="2024-05-25T13:50:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-25T13:50:43 IST" duration-ms="34894" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate registering an account by entering different passwords in password and confirm password fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Registering into the application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestNGRunner.TestngRunner@6dbb137d]" started-at="2024-05-25T13:50:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-25T13:51:36 IST" duration-ms="52907" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate all the fields in the reigister account page have proper placeholders or not"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Registering into the application]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.testContextSetup.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.testContextSetup.driver" is null
+at stepdefinitions.RegisterStepdefinitions.proper_placeholders_should_be_displayed_for_all_mandatory_fields(RegisterStepdefinitions.java:106)
+at ✽.proper placeholders should be displayed for all mandatory fields(file:///C:/Users/admin/eclipse-workspace/demoOpencart/src/test/java/features/Register.feature:28)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestNGRunner.TestngRunner@6dbb137d]" started-at="2024-05-25T13:51:36 IST" name="tearDownClass" finished-at="2024-05-25T13:51:36 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestNGRunner.TestngRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

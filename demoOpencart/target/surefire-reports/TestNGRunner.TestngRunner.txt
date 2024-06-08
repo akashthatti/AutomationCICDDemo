@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestNGRunner.TestngRunner
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 207.8 s <<< FAILURE! -- in TestNGRunner.TestngRunner
+TestNGRunner.TestngRunner.runScenario["Validate registering into the account by providing only mandatory fields", "Optional[Registering into the application]"](1) -- Time elapsed: 77.86 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.testContextSetup.driver" is null
+	at stepdefinitions.RegisterStepdefinitions.account_success_message_should_be_displayed(RegisterStepdefinitions.java:63)
+	at ✽.Account success message should be displayed(file:///C:/Users/admin/eclipse-workspace/demoOpencart/src/test/java/features/Register.feature:8)
+
+TestNGRunner.TestngRunner.runScenario["validate all the fields in the reigister account page have proper placeholders or not", "Optional[Registering into the application]"](4) -- Time elapsed: 52.91 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.testContextSetup.driver" is null
+	at stepdefinitions.RegisterStepdefinitions.proper_placeholders_should_be_displayed_for_all_mandatory_fields(RegisterStepdefinitions.java:106)
+	at ✽.proper placeholders should be displayed for all mandatory fields(file:///C:/Users/admin/eclipse-workspace/demoOpencart/src/test/java/features/Register.feature:28)
+
