@@ -25,7 +25,7 @@ public class LoginStepdefinitions
 	@Given("user is on the landing page")
 	public void user_is_on_the_landing_page() 
 	{
-	    System.out.println("landed");
+	    System.out.println("landeded");
 	}
 	
 	@When("user click on my account dropmenu and clicks on login option")
