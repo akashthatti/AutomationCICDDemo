@@ -18,7 +18,7 @@ public class TestContextSetup
 	
 
 	
-	public TestContextSetup() throws IOException
+	public TestContextSetup() throws IOException, InterruptedException
 	{
 		testBase = new TestBase();
 		pageObjectManager = new PageObjectManager(testBase.WebdriverManager());
